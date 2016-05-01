@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itheima="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:text="2.绑定SIM卡"
+        style="@style/home_commen_title"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="通过绑定SIM卡：\n下次重启手机如果发现SIM卡变化，就会发送报警短信"
+        android:textSize="20sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#991693D5"
+        android:onClick="BindSIM"
+        android:padding="5dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:text="点击绑定/解绑SIM卡"
+            />
+        <ImageView
+            android:id="@+id/sjfd_guide2_iv_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/lock"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/step_2"
+            />
+        <Button
+            android:id="@+id/fjfd_guide2_next"
+            android:onClick="toNext"
+            android:text="下一步"
+            style="@style/sjfd_commen_button_next" />
+        <Button
+            android:id="@+id/fjfd_guide2_pre"
+            android:onClick="toPre"
+            android:text="上一步"
+            style="@style/sjfd_commen_button_pre" />
+        <com.itheima.playgame.view.GuideIndicater
+            itheima:step="2"
+            itheima:total="5"
+            style="@style/sjfd_guide_steps" />
+    </RelativeLayout>
+</LinearLayout>

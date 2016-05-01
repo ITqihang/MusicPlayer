@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--手机底部小圆点-->
+    <declare-styleable name="GuideIndicater">
+        <!--当前步数-->
+        <attr name="step" format="integer" min="1"/>
+        <!--总页面数-->
+        <attr name="total" format="integer" min="1"/>
+    </declare-styleable>
+    <!--设置页面长方形圆角背景-->
+    <declare-styleable name="SettingItemView">
+        <!--属性标题-->
+        <attr name="titles" format="string"/>
+        <!--背景选择-->
+        <attr name="bgType">
+            <enum name="start" value="0" />
+            <enum name="middle" value="1" />
+            <enum name="end" value="2" />
+        </attr>
+        <!--是否需要开关属性-->
+        <attr name="iconSwitch" format="boolean"/>
+    </declare-styleable>
+</resources>

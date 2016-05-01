@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:itheima="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        style="@style/common_title_style"
+        android:text="常用工具"/>
+    <com.itheima.playgame.view.SettingItemStyle
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:gravity="bottom"
+        itheima:titles="号码归属地查询"
+        itheima:bgType="start"
+        itheima:iconSwitch="false"
+        ></com.itheima.playgame.view.SettingItemStyle>
+    <com.itheima.playgame.view.SettingItemStyle
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="top"
+        itheima:titles="常用号码查询"
+        itheima:bgType="end"
+        itheima:iconSwitch="false"
+        ></com.itheima.playgame.view.SettingItemStyle>
+    <com.itheima.playgame.view.SettingItemStyle
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="bottom"
+        itheima:titles="短信备份"
+        itheima:bgType="start"
+        itheima:iconSwitch="false"
+        ></com.itheima.playgame.view.SettingItemStyle>
+    <com.itheima.playgame.view.SettingItemStyle
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="top"
+        itheima:titles="短信还原"
+        itheima:bgType="end"
+        itheima:iconSwitch="false"
+        ></com.itheima.playgame.view.SettingItemStyle>
+
+</LinearLayout>
